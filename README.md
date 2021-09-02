@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+Clone the repository:
+ ```
+ git clone -b helloworld https://github.com/itsfitriayu/fe-todo-app.git
+ ```
+
+Navigate inside the directory: 
+```
+cd fe-todo-app
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
