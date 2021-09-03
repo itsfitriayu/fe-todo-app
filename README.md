@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
+
 ## Installation
 
 Clone the repository:
