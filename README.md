@@ -9,7 +9,7 @@ Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
 
 Clone the repository:
  ```
- git clone -b helloworld https://github.com/itsfitriayu/fe-todo-app.git
+ git clone -b dev https://github.com/itsfitriayu/fe-todo-app.git
  ```
 
 Navigate inside the directory: 
