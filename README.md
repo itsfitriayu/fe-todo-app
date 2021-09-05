@@ -3,8 +3,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Deployment
- Markup : - [x] Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
-          - [ ] Deploy ToDo app
+
+ - [x] Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
+ - [ ] Deploy ToDo app
           
 ## Installation
 
