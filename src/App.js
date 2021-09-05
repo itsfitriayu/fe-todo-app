@@ -1,23 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import "./App.css";
 import Form from "./Components/Form"; //registration form (signup)
 import Login from "./Components/login"; //login page (signin)
+import NotFound from "./Components/NotFound"; //404 not found
+import Forgot from "./Components/forgot"; //forgot-passw
+
+
 
 function App () {
   return (
-    /* <router>
-        <switch>
-          <Route exact path="/" component={login} />
-          <Route exact path="/signup" component={Form} />
-        </switch>
-      </router> */
-      
-    <div>
-    <Login/>
-    </div>
+    <Router>
+    <Switch>
+      <Route exact path="/" component={Login} />
+      <Route exact path="/register" component={Form} />
+      <Route exact path="/forgot-password" component={Forgot} />
+      <Route component={NotFound} />
+    </Switch>
+  </Router>
   );
 };
 

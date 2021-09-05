@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Forgot = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
@@ -12,7 +12,7 @@ const Login = () => {
               </p>
           </div>
           <div  className="p-5 rounded-md bg-gray-100">
-           <h2 className="mt-6 text-xl text-gray-900">Great to see you again!</h2>
+           <h2 className="mt-6 text-xl text-gray-900">Forgot your password?</h2>
             
           <form className="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" defaultValue="true" />
@@ -31,53 +31,27 @@ const Login = () => {
                   placeholder="Email"
                 />
               </div>
-              <div className="mt-3">
-                <label htmlFor="password" className="sr-only">
-                  Password
-                </label>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  minLength={8}
-                  autoComplete="current-password"
-                  required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 placeholder-gray-400 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                  placeholder="Password"
-                />
-              </div>
             </div>
             <div>
               <button
                 type="submit"
-                className="mt-12 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                Login
+                className="mt-6 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              > Reset Password
               </button>
             </div>
           </form>
-          </div>
-
-         <div className="text-sm">
+          
+         <div className="mt-12 text-sm text-center ">
          < a className = "font-medium text-indigo-800 hover:text-indigo-500" >
-            <Link to="/forgot-password">
-            Forgot password?
-                </Link>
+            <Link to="/">
+            Back to Login
+            </Link>
          </a>
-
-           <p className="mt-1 font-medium text-gray-800">
-            Don’t have an account? {' '}
-              <a className="font-medium text-indigo-800 hover:text-indigo-500">
-                <Link to="/register">
-                  Sign up
-                </Link>
-              </a>
-            </p>
          </div>
+          </div>
         </div>
-        
       </div>
     )
   };
 
-export default Login;
+export default Forgot;
