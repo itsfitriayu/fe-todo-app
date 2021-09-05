@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "ln -s ../../../src/App.css";
 
 const RegisterForm = () => {
     const [values, setValues] = useState({
@@ -20,7 +21,7 @@ const RegisterForm = () => {
     <div className="container">
       <div className="app-wrapper">
           <div>
-              <h2 className="title">Create Account</h2>
+              <h2 className="title text-red">Create Account</h2>
           </div>
           <form className="form-wrapper">
             <div className="name">
