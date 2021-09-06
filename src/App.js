@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+import "./App.css";
+import Form from "./Components/Form"; //registration form (signup)
+import Login from "./Components/login"; //login page (signin)
+import NotFound from "./Components/NotFound"; //404 not found
+import Forgot from "./Components/forgot"; //forgot-passw
+
+
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          REACT HELLO WORLD
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Switch>
+      <Route exact path="/" component={Login} />
+      <Route exact path="/register" component={Form} />
+      <Route exact path="/forgot-password" component={Forgot} />
+      <Route component={NotFound} />
+    </Switch>
+  </Router>
   );
-}
+};
 
 export default App;

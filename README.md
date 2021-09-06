@@ -1,21 +1,31 @@
-# Getting Started with Create React App
+# ToDo App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Deployment
-Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
 
+ - [x] Deploy Hello World app in [Heroku](https://try-react-helloworld.herokuapp.com/)
+ - [ ] Deploy ToDo app
+          
 ## Installation
 
 Clone the repository:
  ```
- git clone -b dev https://github.com/itsfitriayu/fe-todo-app.git
+ git clone https://github.com/itsfitriayu/fe-todo-app.git
  ```
 
 Navigate inside the directory: 
 ```
 cd fe-todo-app
 ```
+
+## Available Pages
+
+|    Route/URL     |     Descriprion     |
+| :--------------: |---------------------|
+|        /         |    Login/Signin     |
+|  /registration   | Registration/Signup |
+| /forgot-password |   Forgot Password   |
 
 ## Available Scripts
 
