@@ -28,7 +28,7 @@
 .name,
 .email,
 .password {
-  margin: 20px;
+  margin: 2rm;
   color: black;
   font-size: 16px;
 }
@@ -44,8 +44,8 @@
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
-  border-bottom-style: 2px solid black;
-  margin-bottom: 10px;
+  border-bottom-style: 2rm solid black;
+  margin-bottom: 5rm;
 }
 
 .error {

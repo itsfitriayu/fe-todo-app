@@ -7,9 +7,13 @@ const Login = () => {
         <div className="max-w-md w-full space-y-8">
          
             <div className="text-3xl font-bold uppercase">
-              <p className="text-indigo-800">TO
-                <span className="text-gray-800">DO</span>
-              </p>
+              <a>
+              <Link to="/">
+                <p className="text-indigo-800">TO
+                  <span className="text-gray-800">DO</span>
+                </p>
+              </Link>
+              </a>
           </div>
           <div  className="p-5 rounded-md bg-gray-100">
            <h2 className="mt-6 text-xl text-gray-900">Great to see you again!</h2>
@@ -67,7 +71,7 @@ const Login = () => {
 
            <p className="mt-1 font-medium text-gray-800">
             Don’t have an account? {' '}
-              <a className="font-medium text-indigo-800 hover:text-indigo-500">
+              <a href="/#" className="font-medium text-indigo-800 hover:text-indigo-500">
                 <Link to="/register">
                   Sign up
                 </Link>
