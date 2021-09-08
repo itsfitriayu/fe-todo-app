@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 |    Route/URL     |     Descriprion     |
 | :--------------: |---------------------|
 |        /         |    Home             |
-|    /Login        |    Login            |
+|    /login        |    Login            |
 |  /registration   | Registration/Signup |
 | /forgot-password |   Forgot Password   |
 | /todo-app        |   To Do List App    |
@@ -22,8 +22,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Installation and use
 
 ***Prerequisite:***
-
-If you haven't already, install the [Squarespace Local Development Server](http://developers.squarespace.com/local-development). Then...
 
 Clone the repository:
  ```
