@@ -30,11 +30,10 @@ const RegisterForm = () => {
                 </Link>
                 </a>
             </div>
-            <div  className="p-5 rounded-md bg-gray-100">
-          <div>
-              <h2 className="title text-red">Create Account</h2>
-          </div>
-          <form className="form-wrapper">
+        <div  className="p-5 rounded-md bg-gray-100">
+          <h2 className="mt-6 text-xl text-gray-900">Create your account</h2>
+          
+          <form className="mt-5 space-y-6">
             <div className="name">
                 <label className="label">Full Name</label>
                 <input 
@@ -61,6 +60,7 @@ const RegisterForm = () => {
                     className="input"
                     type="pasword" 
                     name="password" 
+                    minLength={8}
                     value={values.password}
                     onChange={handleChange}
                 />
@@ -70,6 +70,16 @@ const RegisterForm = () => {
             </div>
         </form>
         </div>
+            <div>
+                <p className="mt-1 text-sm font-medium text-gray-800">
+                    Already have an account? {' '}
+                    <a href="/#" className="font-medium text-indigo-800 hover:text-indigo-500">
+                    <Link to="/login">
+                    Login
+                    </Link>
+                </a>
+                </p>
+            </div>
       </div>
     </div>
   );
