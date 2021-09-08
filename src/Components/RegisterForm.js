@@ -66,7 +66,8 @@ const RegisterForm = () => {
                 />
             </div>
             <div>
-                <button className="submit" onClick={handleFormSubmit}>Register</button>
+                <button className="mt-10 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-800 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+               onClick={handleFormSubmit}>Register</button>
             </div>
         </form>
         </div>
