@@ -46,7 +46,7 @@ const Forgot = () => {
           </form>
           
          <div className="mt-12 text-sm text-center ">
-         < a href="/#" className = "font-medium text-indigo-800 hover:text-indigo-500" >
+         < a className = "font-medium text-indigo-800 hover:text-indigo-500" >
             <Link to="/login">
             Back to Login
             </Link>
