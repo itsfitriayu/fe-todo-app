@@ -31,7 +31,7 @@ const RegisterForm = () => {
 
     
 
-    fetch("http://bc21-180-252-118-200.ngrok.io/register", {
+    fetch("http://34.126.180.251:5000/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(signUp),
