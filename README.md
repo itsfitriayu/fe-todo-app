@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 |    /login        |    Login            |
 |  /registration   | Registration/Signup |
 | /forgot-password |   Forgot Password   |
-| /todo-app        |   To Do List App    |
+| /todo            |   To Do List App    |
 |        -         |        404          |
 
 # Installation and use
