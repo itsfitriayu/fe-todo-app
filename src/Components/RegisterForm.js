@@ -74,7 +74,7 @@ const RegisterForm = () => {
             <div>
                 <p className="mt-1 text-sm font-medium text-gray-800">
                     Already have an account? {' '}
-                    <a href="/#" className="font-medium text-indigo-800 hover:text-indigo-500">
+                    <a className="font-medium text-indigo-800 hover:text-indigo-500">
                     <Link to="/login">
                     Login
                     </Link>

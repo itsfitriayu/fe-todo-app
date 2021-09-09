@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState}  from "react";
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Loginform = () => {
+  const [details, setDetails] = useState({email:"", password:""});
+
+  const submitHandler = e => {
+    e.preventDefault();  
+
+  }
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
@@ -18,21 +25,24 @@ const Login = () => {
           <div  className="p-5 rounded-md bg-gray-100">
            <h2 className="mt-6 text-xl text-gray-900">Great to see you again!</h2>
             
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form onSubmit={submitHandler} method="post"
+          className="mt-8 space-y-6">
             <input type="hidden" name="remember" defaultValue="true" />
             <div>
               <div className="rounded-md -space-y-px">
-                <label htmlFor="email-address" className="sr-only">
+                <label htmlFor="email" className="sr-only">
                   Email
                 </label>
                 <input
-                  id="email-address"
+                  id="email"
                   name="email"
                   type="email"
                   autoComplete="email"
                   required
                   className="appearance-none rounded-none relative block w-full px-3 py-2 placeholder-gray-400 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Email"
+                  onChange={e => setDetails({...details, email: e.target.value})}
+                  value={details.email}
                 />
               </div>
               <div className="mt-3">
@@ -48,6 +58,8 @@ const Login = () => {
                   required
                   className="appearance-none rounded-none relative block w-full px-3 py-2 placeholder-gray-400 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Password"
+                  onChange={e => setDetails({...details, password: e.target.value})}
+                  value={details.password}
                 />
               </div>
             </div>
@@ -71,7 +83,7 @@ const Login = () => {
 
            <p className="mt-1 font-medium text-gray-800">
             Don’t have an account? {' '}
-              <a href="/#" className="font-medium text-indigo-800 hover:text-indigo-500">
+              <a className="font-medium text-indigo-800 hover:text-indigo-500">
                 <Link to="/register">
                   Sign up
                 </Link>
@@ -84,4 +96,4 @@ const Login = () => {
     )
   };
 
-export default Login;
+export default Loginform;
