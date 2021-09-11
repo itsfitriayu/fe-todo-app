@@ -7,7 +7,7 @@ import Form from "./Components/Form"; //registration form (signup)
 import Loginform from "./Components/login"; //login page (signin)
 import NotFound from "./Components/NotFound"; //404 not found
 import Forgot from "./Components/forgot"; //forgot-passw
-import Todo from "./Components/todo"; //forgot-passw
+import Todo from "./Components/todo/todo"; //forgot-passw
 
 
 
